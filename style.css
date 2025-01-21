@@ -49,8 +49,13 @@
   list-style: none;
   color: var(--secondary-color);
   position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-
+.headerMenu li:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
 .line::after {
   content: "";
   width: 1px;
@@ -83,11 +88,60 @@
 
 .menu {
   display: none;
+  position: relative;
+}
+.menuList {
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  right: 2px;
+  padding: 10px;
+  display: none;
+  transition: 0.3s ease;
+}
+.hamburgerMenuList li {
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-color);
+  margin: 10px 0px;
+  transition: 0.3s ease;
 }
 
+.hamburgerMenuList li:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.menuActive {
+  display: block;
+  animation: slideIn 0.3s ease;
+}
+
+.menuShowActive {
+  transition: 0.3s ease;
+  transform: rotate(90deg);
+}
+
+.hamburgerMenu {
+  transition: 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /* header style end */
 
-@media only screen and (max-width: 600px) {
+/* banner style start */
+
+/* banner style end */
+
+@media only screen and (max-width: 640px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -110,5 +164,33 @@
   .hamburgerMenu {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .headerMenu {
+    gap: 20px;
+    font-size: 14px;
+  }
+  .logInBtn {
+    padding: 8px 14px;
+  }
+  .profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .headerMenu {
+    font-size: 12px;
+  }
+  .headerParent {
+    padding: 10px 10px;
   }
 }
