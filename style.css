@@ -129,7 +129,7 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(300px);
+    transform: translateX(200px);
   }
   to {
     transform: translateX(0);
@@ -139,9 +139,72 @@
 
 /* banner style start */
 
+.bannerLeft h2 {
+  font-size: 55px;
+  font-weight: 800;
+  width: 600px;
+  line-height: 80px;
+}
+
+.bannerLeft p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  width: 600px;
+  line-height: 25px;
+  margin: 25px 0px 30px 0px;
+}
+
+.bannerLeft button {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+}
+
+.bannerParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0px;
+  padding: 0px 6px;
+}
+
+.imageParent {
+  position: relative;
+}
+.firstImage {
+  width: 400px;
+  border-radius: 10px;
+}
+.secondImage {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.thirdImage {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.secondImageParent {
+  position: absolute;
+  top: 220px;
+  right: 330px;
+}
+
+.thirdParent {
+  position: absolute;
+  top: 12px;
+  right: 340px;
+}
+
 /* banner style end */
 
 @media only screen and (max-width: 640px) {
+  /* header style */
+
   .container {
     width: 100%;
     margin: 0 auto;
@@ -165,9 +228,41 @@
     width: 35px;
     height: 35px;
   }
+
+  /* banner style */
+  .bannerParent {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .thirdParent {
+    display: none;
+  }
+  .secondImageParent {
+    display: none;
+  }
+
+  .bannerLeft h2 {
+    font-size: 30px;
+    width: 100%;
+    line-height: 40px;
+  }
+
+  .bannerLeft p {
+    width: 100%;
+    line-height: 25px;
+    margin: 15px 0px 20px 0px;
+  }
+
+  .bannerLeft button {
+    padding: 15px 20px;
+  }
+  .bannerParent {
+    margin: 20px 0px;
+  }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* header style */
   .container {
     width: 100%;
     margin: 0 auto;
@@ -193,4 +288,42 @@
   .headerParent {
     padding: 10px 10px;
   }
+
+  /* banner style */
+
+  .firstImage {
+    width: 230px;
+  }
+  .secondImage {
+    width: 200px;
+  }
+  .thirdImage {
+    width: 160px;
+  }
+
+  .bannerLeft h2 {
+    font-size: 30px;
+    width: 400px;
+    line-height: 40px;
+  }
+
+  .bannerLeft p {
+    width: 330px;
+    line-height: 25px;
+    margin: 15px 0px 20px 0px;
+  }
+  .secondImageParent {
+    top: 110px;
+    left: -140px;
+  }
+  .thirdParent {
+    top: 5px;
+    left: -150px;
+  }
+
+  .bannerLeft button {
+    padding: 15px 20px;
+  }
+
+  /* ClanBook  style */
 }
