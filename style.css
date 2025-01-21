@@ -167,8 +167,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 80px 0px;
-  padding: 0px 6px;
+  padding: 80px 6px 200px 6px;
+}
+.bannerBackground {
+  background-color: #f5f6f7;
 }
 
 .imageParent {
@@ -179,7 +181,7 @@
   border-radius: 10px;
 }
 .secondImage {
-  width: 300px;
+  width: 250px;
   border-radius: 10px;
 }
 
@@ -201,6 +203,74 @@
 }
 
 /* banner style end */
+
+/* bookClan style start */
+
+.bookClan {
+  text-align: center;
+  margin: 80px 0px 50px 0px;
+}
+
+.bookClan h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.bookClan p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.bookFirstImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bookSecondImage {
+  width: 300px;
+  border-radius: 10px;
+}
+.bookRightSide {
+  width: 600px;
+  clip-path: polygon(1% 1%, 1% 99%, 98% 98%, 99% 21%);
+  overflow: hidden;
+}
+.secondImageShow {
+  position: relative;
+}
+.SecondImageParent {
+  position: absolute;
+  top: -10px;
+  left: 380px;
+}
+
+.bookParent {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  margin-bottom: 60px;
+}
+
+.bookParagraph {
+  color: var(--secondary-color);
+}
+
+.bookParagraph li {
+  margin: 10px 0px;
+}
+.createBtn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  margin: 60px 0px 0px 0px;
+  cursor: pointer;
+}
+
+/* bookClan style end */
 
 @media only screen and (max-width: 640px) {
   /* header style */
@@ -233,7 +303,9 @@
   .bannerParent {
     flex-direction: column;
     gap: 20px;
+    padding: 20px 10px;
   }
+
   .thirdParent {
     display: none;
   }
@@ -258,6 +330,35 @@
   }
   .bannerParent {
     margin: 20px 0px;
+  }
+
+  /* clan book style */
+
+  .bookParent {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 10px;
+  }
+  .SecondImageParent {
+    display: none;
+  }
+  .bookRightSide {
+    width: 100%;
+  }
+
+  .bookClan h2 {
+    font-size: 30px;
+  }
+
+  .bookClan p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .createBtn {
+    margin: 20px 0px 0px 0px;
+  }
+  .bookClan {
+    margin: 30px 0px 50px 0px;
   }
 }
 
@@ -326,4 +427,20 @@
   }
 
   /* ClanBook  style */
+
+  .bookParent {
+    gap: 90px;
+  }
+  .bookSecondImage {
+    width: 200px;
+  }
+  .bookRightSide {
+    width: 350px;
+  }
+  .SecondImageParent {
+    left: 200px;
+  }
+  .createBtn {
+    margin-top: 10px;
+  }
 }
