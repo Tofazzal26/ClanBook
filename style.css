@@ -289,9 +289,9 @@
 }
 
 .communityInfo p {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--secondary-color);
-  width: 840px;
+  width: 720px;
   text-align: center;
   line-height: 30px;
   margin: 30px 0px;
@@ -319,6 +319,38 @@
 }
 
 /* bookClan style end */
+
+/* ClanBooker experience style start */
+.socialParent {
+  margin-bottom: 60px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  transform: translateY(60px);
+}
+.social img {
+  width: 50px;
+}
+
+.social h2 {
+  font-size: 18px;
+}
+.socialBackground {
+  height: 200px;
+  background-color: #eaecf0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.experience {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+/* ClanBooker experience style end */
 
 @media only screen and (max-width: 640px) {
   /* header style */
@@ -422,6 +454,15 @@
     padding: 20px 0px;
     transform: translateY(20px);
   }
+
+  /* ClanBooker experience style */
+
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 0px 10px;
+  }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -512,7 +553,7 @@
   }
 
   .communityInfo p {
-    font-size: 16px;
+    font-size: 14px;
     width: 640px;
   }
   .communityInfo {
@@ -520,5 +561,13 @@
   }
   .communityParent {
     height: 48vh;
+  }
+
+  /* ClanBooker experience style  */
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0px 10px;
   }
 }
