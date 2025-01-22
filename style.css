@@ -352,6 +352,97 @@
 }
 /* ClanBooker experience style end */
 
+/* Our Clan Booker offer style start */
+
+.offer {
+  background-color: #f5f6f7;
+  margin-bottom: 40px;
+}
+.BookerOffer {
+  padding: 1px 0px 10px 0px;
+}
+
+.orderItem {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.placeBtn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 15px 60px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 60px;
+}
+.orderParent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.offerDivide {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.offerInfo {
+  padding: 62px;
+}
+.offerBackground {
+  background-color: var(--white);
+  flex: 1;
+  border-radius: 8px;
+}
+
+.ebookParent {
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.ebookRight {
+  flex: 1;
+}
+
+.rightSideItem {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ebook {
+  width: 80px;
+}
+.format {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.formatInfo h2 {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.formatInfo p {
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+.bookPrice {
+  font-size: 40px;
+}
+.ebookParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+/* Our Clan Booker offer style end */
+
 @media only screen and (max-width: 640px) {
   /* header style */
 
@@ -462,6 +553,23 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     padding: 0px 10px;
+  }
+
+  /* our clan booker offer stye  */
+  .offerDivide {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 40px;
+  }
+  .ebookParent {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+  .format {
+    flex-direction: column;
+    gap: 5px;
   }
 }
 
