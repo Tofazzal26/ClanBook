@@ -14,7 +14,8 @@
 }
 
 .container {
-  width: 1500px;
+  /* width: 1500px; */
+  width: 68.75%;
   margin: 0 auto;
 }
 
@@ -22,7 +23,7 @@
 
 .headerBackgroundColor {
   background-color: var(--white);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -145,10 +146,10 @@
 /* banner style start */
 
 .bannerLeft h2 {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 800;
-  width: 600px;
-  line-height: 80px;
+  width: 630px;
+  line-height: 85px;
 }
 
 .bannerLeft p {
@@ -162,9 +163,10 @@
 .bannerLeft button {
   color: var(--white);
   background-color: var(--primary-color);
-  padding: 15px 30px;
+  padding: 15px 32px;
+  font-size: 16px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
 }
 
@@ -176,6 +178,7 @@
 }
 .bannerBackground {
   background-color: #f5f6f7;
+  margin-top: 90px;
 }
 
 .imageParent {
@@ -217,7 +220,7 @@
 }
 
 .bookClan h2 {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 800;
 }
 
@@ -267,15 +270,18 @@
 .createBtn {
   color: var(--white);
   background-color: var(--primary-color);
-  padding: 15px 30px;
-  border-radius: 6px;
-  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 500;
   border: none;
   margin: 60px 0px 0px 0px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .community {
-  margin: 0px 10px 80px 10px;
+  margin: 0px 0px 80px 0px;
 }
 .communityParent {
   background-image: url("/community.png");
@@ -286,28 +292,29 @@
 }
 
 .communityInfo h2 {
-  width: 840px;
+  width: 1040px;
   text-align: center;
-  line-height: 50px;
-  font-size: 35px;
+  line-height: 55px;
+  font-size: 42px;
   font-weight: 700;
 }
 
 .communityInfo p {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--secondary-color);
-  width: 720px;
+  width: 900px;
   text-align: center;
   line-height: 30px;
-  margin: 30px 0px;
+  margin: 25px 0px;
 }
 
 .communityInfo button {
   color: var(--white);
   background-color: var(--primary-color);
-  padding: 15px 30px;
+  padding: 16px 20px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 16px;
   border: none;
   cursor: pointer;
 }
@@ -338,11 +345,12 @@
   transform: translateY(60px);
 }
 .social img {
-  width: 50px;
+  width: 64px;
 }
 
 .social h2 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .socialBackground {
   height: 200px;
@@ -378,12 +386,15 @@
 .placeBtn {
   color: var(--white);
   background-color: var(--primary-color);
-  padding: 15px 60px;
-  border-radius: 6px;
-  font-weight: 600;
+  padding: 8px 60px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   margin-top: 60px;
+  display: flex;
+  align-items: center;
 }
 .orderParent {
   display: flex;
@@ -673,6 +684,23 @@
   color: var(--white);
   padding: 18px 0px;
 }
+.bookOfferPara {
+  width: 650px;
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin: 0 auto;
+  line-height: 30px;
+}
+.right {
+  width: 40px;
+}
+
+.sayParagraph {
+  width: 800px;
+  font-size: 18px;
+  margin: 0 auto;
+  line-height: 25px;
+}
 @media only screen and (max-width: 640px) {
   /* header style */
 
@@ -734,7 +762,9 @@
   }
 
   /* clan book style */
-
+  .bookOfferPara {
+    width: 100%;
+  }
   .bookParent {
     flex-direction: column;
     gap: 20px;
@@ -827,6 +857,12 @@
   .emailMain {
     flex-direction: column;
     text-align: center;
+  }
+  .bannerBackground {
+    margin-top: 60px;
+  }
+  .sayParagraph {
+    width: 100%;
   }
 }
 
@@ -954,5 +990,8 @@
   .newsLetterInfo p {
     font-size: 14px;
     margin-top: 0px;
+  }
+  .bannerBackground {
+    margin-top: 50px;
   }
 }
