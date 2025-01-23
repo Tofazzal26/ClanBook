@@ -524,6 +524,150 @@
 
 /* ClanBookers Community style end */
 
+/* footer style start */
+.footer {
+  background-color: #f5f6f7;
+}
+
+.newsLetterInfo h2 {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 600;
+}
+.newsLetterInfo p {
+  font-size: 16px;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.email {
+  width: 35px;
+}
+
+.emailParent {
+  width: 70px;
+  height: 70px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.emailMain {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.address {
+  width: 460px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #abaebb;
+  outline: none;
+  border: none;
+  padding: 22px 30px;
+}
+
+.newsLetter {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.newsLetterParent {
+  padding: 80px 0px 60px 0px;
+}
+
+.Subscribe {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscribeParent {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.emailAddress {
+  position: relative;
+}
+.newsLetterBackground {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+.icon {
+  width: 40px;
+}
+.twiter {
+  width: 20px;
+}
+.linkedin {
+  width: 20px;
+}
+.instagramicon {
+  width: 24px;
+}
+.iconParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--white);
+}
+.socialIcon {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ClanBook {
+  font-size: 38px;
+  font-weight: 700;
+}
+.clanPara {
+  color: var(--secondary-color);
+  width: 300px;
+  line-height: 25px;
+  margin: 20px 0px;
+}
+.account {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b2533;
+}
+.footerList {
+  margin-top: 20px;
+}
+.footerList li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-color);
+  margin-top: 16px;
+}
+.middleParent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastFooterInfo {
+  margin-top: 70px;
+}
+.lastFooterInfo h2 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #f1654c;
+  color: var(--white);
+  padding: 18px 0px;
+}
 @media only screen and (max-width: 640px) {
   /* header style */
 
@@ -661,6 +805,24 @@
   .cardParagraph {
     width: 100%;
   }
+  .lastFooterInfo {
+    margin-top: 20px;
+  }
+  .address {
+    width: 100%;
+  }
+  .middleParent {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsLetter {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .emailMain {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -770,5 +932,22 @@
   }
   .cardMainParent {
     flex-wrap: wrap;
+  }
+  /* footer style  */
+
+  .middleParent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .emailMain {
+    gap: 10px;
+  }
+  .newsLetterInfo h2 {
+    font-size: 20px;
+  }
+  .newsLetterInfo p {
+    font-size: 14px;
+    margin-top: 0px;
   }
 }
