@@ -494,6 +494,9 @@ html {
   font-size: 18px;
   font-weight: 600;
 }
+.cardAvatar img {
+  width: 50px;
+}
 
 .avatarInfo p {
   font-size: 14px;
@@ -519,7 +522,8 @@ html {
 }
 
 .cardMainParent {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -866,7 +870,7 @@ html {
   /* community say  style */
 
   .cardMainParent {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .cardParagraph {
     width: 100%;
@@ -1003,7 +1007,7 @@ html {
     padding: 0px 10px;
   }
   .cardMainParent {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
   /* footer style  */
 
